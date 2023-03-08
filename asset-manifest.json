@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/ticket/static/css/main.073c9b0a.css",
-    "main.js": "/ticket/static/js/main.0bc17e88.js",
-    "static/js/787.872e2624.chunk.js": "/ticket/static/js/787.872e2624.chunk.js",
-    "static/media/logo.svg": "/ticket/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/ticket/static/css/main.1546dc1c.css",
+    "main.js": "/ticket/static/js/main.75a1dfcd.js",
+    "static/media/cmi_1f45051f.jpg": "/ticket/static/media/cmi_1f45051f.e55961a23b704a9f7372.jpg",
     "index.html": "/ticket/index.html",
-    "main.073c9b0a.css.map": "/ticket/static/css/main.073c9b0a.css.map",
-    "main.0bc17e88.js.map": "/ticket/static/js/main.0bc17e88.js.map",
-    "787.872e2624.chunk.js.map": "/ticket/static/js/787.872e2624.chunk.js.map"
+    "static/media/castom_border_1.svg": "/ticket/static/media/castom_border_1.01cc2c559498f4922415a53009a1668d.svg",
+    "static/media/castom_border_2.svg": "/ticket/static/media/castom_border_2.2e087c498bbf50e823f0fd70774ce35e.svg",
+    "static/media/tram_layout.svg": "/ticket/static/media/tram_layout.798c3135b5af094bfdb30247208204d9.svg",
+    "main.1546dc1c.css.map": "/ticket/static/css/main.1546dc1c.css.map",
+    "main.75a1dfcd.js.map": "/ticket/static/js/main.75a1dfcd.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.0bc17e88.js"
+    "static/css/main.1546dc1c.css",
+    "static/js/main.75a1dfcd.js"
   ]
 }
