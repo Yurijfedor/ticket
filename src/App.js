@@ -5,7 +5,8 @@ const App = () => {
   return (
     <>
       <Header />
-      <Ticket />
+      <Ticket stop={false} />
+      <Ticket stop={true} />
     </>
   );
 };
