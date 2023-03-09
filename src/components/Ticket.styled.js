@@ -6,7 +6,7 @@ import castomBorder2 from "../images/castom_border_2.svg";
 export const Container = styled.div`
   width: calc(100% - 10%);
   padding: 15px;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   border: 1px solid rgb(223, 225, 217);
   border-radius: 4px;
   box-shadow: 0px 1px 5px 1px rgb(223, 225, 217, 0.75);

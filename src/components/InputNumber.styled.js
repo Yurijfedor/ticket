@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 export const ContainerHome = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  /* justify-content: center; */
+  align-items: center;
 `;
 
 export const InputStyled = styled.input`
@@ -12,4 +15,11 @@ export const InputStyled = styled.input`
   padding-left: 25px;
   border: 2px solid blue;
   font-size: 24px;
+`;
+
+export const ButtonStyled = styled.button`
+  padding: 10px;
+  background-color: #a0e38d;
+  color: blue;
+  font-weight: 600;
 `;

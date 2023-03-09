@@ -1,4 +1,5 @@
 import { BiLeftArrowAlt } from "react-icons/bi";
+import { Link } from "react-router-dom";
 import {
   HeaderTitle,
   HeaderTitleWrapp,
@@ -10,7 +11,10 @@ export const Header = () => {
   return (
     <>
       <HeaderTitleWrapp>
-        <BiLeftArrowAlt size={32} color={"#6D6D69"} />
+        <Link to={"/"} style={{ display: "flex", alignItems: "center" }}>
+          <BiLeftArrowAlt size={32} color={"#6D6D69"} />
+        </Link>
+
         <HeaderTitle>Проїзд</HeaderTitle>
       </HeaderTitleWrapp>
       <FormatTicketWrapp>
