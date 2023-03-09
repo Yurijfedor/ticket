@@ -41,15 +41,12 @@ export const Ticket = ({ stop, carNumber }) => {
     return `${day}.${month}.${year}`;
   };
 
-  // const countDownTime = new Date().getTime() + 3600000;
-  // const now = new Date().getTime();
-  // const timer = setInterval(() => {
+  function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+  }
 
-  //   const distance = countDownTime - now;
-  //   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  //   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  // }, 1000);
-  // console.log(`${minutes}:${second}`);
   return (
     <Container style={stop ? { filter: "grayscale(100%)" } : {}}>
       <div
@@ -65,7 +62,8 @@ export const Ticket = ({ stop, carNumber }) => {
           <TicketInfoItem>Вінниця</TicketInfoItem>
           <TicketInfoItem>КП Вінницька транспортна компанія</TicketInfoItem>
           <TicketInfoItem>
-            <span style={{ color: "#999999" }}>Серія</span> 472538021
+            <span style={{ color: "#999999" }}>Серія</span>{" "}
+            {!stop ? getRandomInt(472538021, 479985326) : 472538021}
           </TicketInfoItem>
         </ul>
       </div>
