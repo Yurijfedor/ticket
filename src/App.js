@@ -1,14 +1,14 @@
-import { Header } from "./components/Header";
-import { Ticket } from "./components/Ticket";
+import { lazy } from "react";
+import { Routes, Route } from "react-router-dom";
 
-const App = () => {
+const FormData = lazy(() => import("./pages/Home"));
+const TicketPage = lazy(() => import("./pages/Ticket"));
+
+export const App = () => {
   return (
-    <>
-      <Header />
-      <Ticket stop={false} />
-      <Ticket stop={true} />
-    </>
+    <Routes>
+      <Route path="/" element={<FormData />} />
+      <Route path="ticket" element={<TicketPage />} />
+    </Routes>
   );
 };
-
-export default App;

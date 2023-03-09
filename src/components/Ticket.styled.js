@@ -2,7 +2,6 @@ import styled from "styled-components";
 import backgroundLogo from "../images/cmi_1f45051f.jpg";
 import castomBorder1 from "../images/castom_border_1.svg";
 import castomBorder2 from "../images/castom_border_2.svg";
-import tramLayout from "../images/tram_layout.svg";
 
 export const Container = styled.div`
   width: calc(100% - 10%);
