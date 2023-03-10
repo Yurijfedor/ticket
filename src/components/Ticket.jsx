@@ -47,6 +47,8 @@ export const Ticket = ({ stop, carNumber }) => {
     return Math.floor(Math.random() * (max - min) + min);
   }
 
+  const beforeDate = new Date() - 86400000;
+
   return (
     <Container style={stop ? { filter: "grayscale(100%)" } : {}}>
       <div
@@ -63,7 +65,7 @@ export const Ticket = ({ stop, carNumber }) => {
           <TicketInfoItem>КП Вінницька транспортна компанія</TicketInfoItem>
           <TicketInfoItem>
             <span style={{ color: "#999999" }}>Серія</span>{" "}
-            {!stop ? getRandomInt(472538021, 479985326) : 472538021}
+            {!stop ? getRandomInt(123456789, 987654321) : 472538021}
           </TicketInfoItem>
         </ul>
       </div>
@@ -87,7 +89,7 @@ export const Ticket = ({ stop, carNumber }) => {
         <PropertieItem>
           <ItemTitle>Дата</ItemTitle>
           <ItemInfo>
-            {!stop ? transformDate(new Date()) : "08.03.2023"}
+            {!stop ? transformDate(new Date()) : transformDate(beforeDate)}
           </ItemInfo>
         </PropertieItem>
         <PropertieItem>
@@ -100,7 +102,7 @@ export const Ticket = ({ stop, carNumber }) => {
         </PropertieItem>
       </PropertieList>
       <AddInfo>Квиток разового використання</AddInfo>
-      <Countdown>{!stop ? <Timer /> : "43:26"}</Countdown>
+      <Countdown>{!stop ? <Timer /> : ""}</Countdown>
     </Container>
   );
 };
