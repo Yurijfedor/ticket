@@ -79,7 +79,7 @@ export const Ticket = ({ stop, carNumber }) => {
             <HeadlightOne />
             <HeadlightTwo />
             <Сurrency>грн</Сurrency>
-            <Cost>8</Cost>
+            <Cost>12</Cost>
           </CastomBorder2>
         </CastomBorder1>
       </TicketLogo>
