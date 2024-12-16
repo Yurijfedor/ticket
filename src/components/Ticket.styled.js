@@ -139,12 +139,12 @@ export const Сurrency = styled.p`
 
 export const Cost = styled.p`
   position: absolute;
-  top: -34px;
-  left: 47px;
+  top: -25px;
+  left: 35px;
   transform: rotate(-25deg);
   color: #fff;
   font-family: Raleway;
-  font-size: 57px;
+  font-size: 50px;
   font-weight: 700;
   color: #44c9e4;
 `;
